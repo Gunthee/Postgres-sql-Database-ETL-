@@ -1,0 +1,10 @@
+__pycache__/
+.venv/
+.env
+node_modules/
+dist/
+export/
+sessions/
+*.csv
+*.json
+pgdata/

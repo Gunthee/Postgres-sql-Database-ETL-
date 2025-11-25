@@ -1,0 +1,7 @@
+FROM postgres:16
+
+
+ENV POSTGRES_DB=Bigdata \
+    POSTGRES_USER=admin \
+    POSTGRES_PASSWORD=1234
+

@@ -1,0 +1,19 @@
+services:
+  db:
+    build: .                     # Path to Dockerfile 
+    image: bigdata_project
+    container_name: bigdata_database
+
+    environment:
+      POSTGRES_DB: Bigdata
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 1234
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
